@@ -1,0 +1,19 @@
+# GitLab Pages — static export of the tracked tree (same pattern as paradigm-threat-files).
+# Do NOT rsync ./ into public/ when the repo has a top-level public/ folder.
+# Default branch should be main ($CI_DEFAULT_BRANCH).
+
+image: alpine:latest
+
+pages:
+  stage: deploy
+  before_script:
+    - apk add --no-cache git
+  script:
+    - mkdir -p public
+    - git archive HEAD | tar -x -C public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_REF_NAME == "test"
