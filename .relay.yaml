@@ -1,0 +1,19 @@
+# Relay fleet: ff-teaser (teaser art and concepts).
+server:
+  hooks:
+    get:
+      path: hooks/server/get.cs
+git:
+  branchRules:
+    default:
+      requireSigned: false
+      allowUnsigned: true
+    branches:
+      - name: "*"
+        rule:
+          requireSigned: false
+          allowUnsigned: true
+      - name: develop
+        rule:
+          requireSigned: false
+          allowUnsigned: true
