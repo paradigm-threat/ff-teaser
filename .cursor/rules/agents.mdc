@@ -1,0 +1,8 @@
+---
+description: Agent instructions — git, mesh sync, ff-story lore
+alwaysApply: true
+---
+
+# Agents
+
+Read [`AGENTS.md`](../../AGENTS.md). **Go-live:** `git push iad1 HEAD:main` → gitlab → poll **`/api/sync/mesh/ff-teaser`**. Lore: **`ff-story`** [`AGENT_CONSISTENCY_CHECKLIST.md`](../../../ff-story/docs/AGENT_CONSISTENCY_CHECKLIST.md).
