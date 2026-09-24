@@ -1,3 +1,4 @@
+d4e4ae8 Add consolidated AGENTS.md and server-side mesh publish guidance.
 a80058f feat(relay): add .relay.yaml and get hook for markdown/WebP
 3022b16 Update teaser concepts and prompts
 851ea89 Update teaser concepts and prompts with new lore
